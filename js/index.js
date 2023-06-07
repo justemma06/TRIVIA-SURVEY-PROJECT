@@ -283,3 +283,42 @@ function getQuestion(categoryId) {
     request.open("GET", url, true);
     request.send();
 }
+
+$(document).ready(function () {
+    let categoryId = 9;
+    getQuestion(categoryId);
+    displayCategories();
+
+
+    $("#next").click(function () {
+        $("#second-form").show();
+        $("#first-form").hide();
+    });
+
+    $('#next-button').click(function () {
+        getQuestion(categoryId);
+        $('#answer').hide();
+        $('#info_div').show();
+       
+    });
+
+    $('#answer-button').click(function () {
+        $('#info_div').hide();
+        $('#answer_div').show();
+        $('#answer').show();
+    });
+
+    // $("#submit").click(function () {
+    //     $("#board").show();
+    //     $(".triviaQuestions").hide();
+    // });
+
+    $('#trivia-questions').change(function () {
+        //console.log($('#trivia-questions option:selected').val());
+        categoryId = $('#trivia-questions option:selected').val();
+        getQuestion(categoryId);
+    });
+
+
+});
+
