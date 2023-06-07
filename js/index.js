@@ -193,4 +193,33 @@ function getElements(response) {
         // returning the newanswer after determining that particular answer based on its id
         return newanswer;
     }
+
+    submitBtn.click(function () {
+        const selectedanswer = getSelected();
+
+        if (selectedanswer) {
+            // if the answer checked by my user is same as the answer stored in the (correct )key in the triviaData array, increase my user's score
+
+
+            console.log(triviaData[currentTriviaQuestion]);
+            if (selectedanswer === triviaData[currentTriviaQuestion].correct) {
+                score++;
+            }
+            currentTriviaQuestion++;
+
+            if (currentTriviaQuestion < triviaData.length) {
+                loadTrivia();
+            } else {
+                triviaBoard.html(`
+                <h2>You answered ${score}/${triviaData.length} questions correctly</h2> 
+                ${getCurrentTime()}
+                
+            `);
+            }
+
+        }
+        localStorage.setItem(triviaBoard, JSON.stringify(triviaBoard));
+    })
 }   
+
+
