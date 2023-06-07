@@ -269,3 +269,17 @@ function displayCategories() {
     request.open("GET", url, true);
     request.send();
 }
+
+function getQuestion(categoryId) {
+    $('#answer').hide();
+    let request = new XMLHttpRequest();
+    const url = `https://opentdb.com/api.php?amount=1&category=${categoryId}`
+    request.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            const response = JSON.parse(this.responseText);
+            getElements(response);
+        }
+    }
+    request.open("GET", url, true);
+    request.send();
+}
