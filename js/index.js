@@ -161,4 +161,17 @@ function getElements(response) {
     loadTrivia();
 
     // writing the function to load each of my trivia questions
+
+    function loadTrivia() {
+        deselectAnswers();
+
+        const currentTriviaData = triviaData[currentTriviaQuestion];
+
+        allQuestions.text(currentTriviaData.question);
+        a_text.text(currentTriviaData.a);
+        b_text.text(currentTriviaData.b);
+        c_text.text(currentTriviaData.c);
+        d_text.text(currentTriviaData.d);
+
+    }
 }   
