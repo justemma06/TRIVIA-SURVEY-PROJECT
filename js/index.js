@@ -174,4 +174,9 @@ function getElements(response) {
         d_text.text(currentTriviaData.d);
 
     }
+
+    function deselectAnswers() {
+        // looping through each answer class stored in the allAnswers variable
+        allAnswers.forEach(answer => answer.checked = false);
+    }
 }   
