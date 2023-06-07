@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+#first-form{
+    background: radial-gradient(circle, rgb(255, 247, 0) 10%,orange 50%);
+    background-color: orange;
+    width: 100%;
+    height: 41rem;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    font-size: 20px; 
+}
+#diamond_image{
+    height: 6rem;
+    /* margin-left: -80rem; */
+    margin-right: 50rem;
+    margin: -10rem;
+}
+#circle_image{
+    position: fixed;
+    margin: 20rem;
+}
+h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    
+}
+#h3_span{
+    color: red;
+    font-size: 35px;
+    margin-top: 20rem;
+}
+
+#trivia-questions{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    margin-top: 5rem;
+    width: 30rem;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+#category_notice{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+#next{
+    width: 15rem;
+    height: 2rem;
+    color: orange;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 3rem;
+    transition: all 0.4s;
+}
+#next:hover{
+    color: whitesmoke;
+    background: orangered;
+    transform: translateY(-10px);
+}
+
+
+#second-form{
+    display: none;
+    background: radial-gradient(circle, rgb(255, 247, 0) 0%,orange 50%);
+    height: 41rem;
+    width: 100%;
+    /* justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    font-size: 20px;  */
+    
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label{
+    cursor: pointer;
+}
+
+.butt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    margin: 40px;
+    width: 10rem;
+    height: 1.5rem;
+    color: orange;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s
+}
+.butt:hover{
+    color: whitesmoke;
+    background: orangered;
+    transform: translateY(-10px);
+}
+#butt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    margin: 40px;
+    width: 10rem;
+    height: 1.5rem;
+    color: orange;
+    background-color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s
+}
+#butt:hover{
+    color: whitesmoke;
+    background: orangered;
+    transform: translateY(-10px);
+}
+#rest{
+    color: orange;
+}
+#rest:hover{
+    color: whitesmoke;
+}
+
+.triviaQuestions{
+    margin-left: 30rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    width: 25rem;
+    /* height: 23rem; */
+    /* text-align: center; */
+}
+#question{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1rem;
+    color: orangered;
+}
+
+#submit{
+    width: 10rem;
+    height: 2rem;
+    color: orange;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    /* border-radius: 10px; */
+    margin-top: 1rem;
+    transition: all 0.4s
+}
+#submit:hover{
+    color: whitesmoke;
+    background: orangered;
+    transform: translateY(-10px);
+}
+
+#notic{
+    position: fixed;
+    background-color: whitesmoke;
+    width: 15rem;
+    height: 10rem;
+    margin-left: 65rem;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 520;
+}
+.not{
+    color: orangered;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-family: cursive;
+    text-decoration: underline;
+}
+#user{
+    margin-top: 0rem;
+}
+
+#answer_div{
+    display: none;
+}
+#answer{
+    font-size: 25px;
+    margin-top: 2rem;
+}
+h6{
+    color: orangered;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    font-family: cursive;
+    text-decoration: underline;
+}
+
+#board{
+    margin-left: 2rem;
+}
