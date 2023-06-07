@@ -179,4 +179,18 @@ function getElements(response) {
         // looping through each answer class stored in the allAnswers variable
         allAnswers.forEach(answer => answer.checked = false);
     }
+
+    function getSelected() {
+        let newanswer;
+
+        allAnswers.forEach(answer => {
+            // the .checked will only work for checkboxes and radio buttons and its used to determine which one was checked(clicked) out of the remaining
+            if (answer.checked) {
+                newanswer = answer.id
+            }
+
+        });
+        // returning the newanswer after determining that particular answer based on its id
+        return newanswer;
+    }
 }   
