@@ -249,3 +249,23 @@ function getCurrentTime() {
     return `${date} ${time}`;
 };
 
+function displayCategories() {
+    let request = new XMLHttpRequest();
+    const url = "https://opentdb.com/api_category.php"
+
+    request.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            const response = JSON.parse(this.responseText);
+            let html = '';
+            for (let i = 0; i < response.trivia_categories.length; i++) {
+                html = '';
+                html += `<option value="${response.trivia_categories[i].id}">`;
+                html += `${response.trivia_categories[i].name}`;
+                html += `</option>`;
+                $('#trivia-questions').append(html);
+            }
+        }
+    }
+    request.open("GET", url, true);
+    request.send();
+}
