@@ -144,4 +144,21 @@ function getElements(response) {
         // }
     ];
     response
+
+    const triviaBoard = $("#board");
+    // querySelectorAll would help me get all elements with the answer class abd store them as an array so I can loop through them later
+    const allAnswers = document.querySelectorAll(".answer");
+    const allQuestions = $("#question");
+    const a_text = $("#a_text");
+    const b_text = $("#b_text");
+    const c_text = $("#c_text");
+    const d_text = $("#d_text");
+    const submitBtn = $("#submit");
+
+    let currentTriviaQuestion = 0;
+    let score = 0;
+
+    loadTrivia();
+
+    // writing the function to load each of my trivia questions
 }   
