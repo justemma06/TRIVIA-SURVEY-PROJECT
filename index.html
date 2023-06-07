@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="first-form">
+            <img id="circle_image" src="images/Orange Circle.svg" alt="">
+            <img id="diamond_image" src="images/Purple Diamond.svg" alt="">
+            <h3>Hi,<br><span id="h3_span">Welcome To My Trivia Survey Questions</span></h3>
+            <select id="trivia-questions"></select>
+            <i>
+                <p id="category_notice">Choose the Category you would like your questions to be based on.</p>
+            </i><br>
+            <img src="../school-website/images/arrowdown.svg" alt="">
+            <button id="next">Start Trivia Game</button>
+
+        </div>
+
+        <div id="second-form"><br>
+            <button id="next-button" class="butt">Next Question</button>
+            <button id="answer-button" class="butt">Show Answer</button>
+            <button class="restart-game" id="butt"><a href="./index.html"><span id="rest">Restart Trivia Game</span></a>
+            </button>
+            <!-- <p id="question"></p> -->
+
+
+            <div id="notic">
+                <div id="info_div">
+                    <h5 class="not">Notice!!!!</h5>
+                    <p id="user">Dear User, in this Page you are to Answer 5 Questions <br> And Words Starting with an
+                        Ampersand (& or &#) means Quotes, they're just there to confuse you😂</p>
+                </div>
+                <div id="answer_div">
+                    <p id="answer"> </p>
+                </div>
+            </div>
+
+            <div class="triviaQuestions">
+
+
+                <h4 id="question">Question</h4>
+
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer"></input>
+                        <label for="a" id="a_text">Trivia Questions</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer"></input>
+                        <label for="b" id="b_text">Questions</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer"></input>
+                        <label for="c" id="c_text">Questions</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer"></input>
+                        <label for="d" id="d_text">Questions</label>
+                    </li>
+                </ul>
+                <button id="submit">Submit</button>
+            </div>
+
+
+
+
+            <div id="board">
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
