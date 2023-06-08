@@ -18,10 +18,12 @@
     font-size: 20px; 
 }
 #diamond_image{
-    height: 6rem;
+    height: 5rem;
+    width: 40rem;
     /* margin-left: -80rem; */
     margin-right: 50rem;
     margin: -10rem;
+    margin-top: 5.5rem;
 }
 #circle_image{
     position: fixed;
@@ -87,7 +89,7 @@ h3{
 #second-form{
     display: none;
     background: radial-gradient(circle, rgb(255, 247, 0) 0%,orange 50%);
-    height: 41rem;
+    height: 42rem;
     width: 100%;
     /* justify-content: center;
     text-align: center;
@@ -239,4 +241,5 @@ h6{
 
 #board{
     margin-left: 2rem;
+    margin-top: 1rem;
 }
