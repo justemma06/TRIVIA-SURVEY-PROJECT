@@ -12,7 +12,7 @@
 <body>
     <div>
         <div id="first-form">
-            <svg id="diamond_image" xmlns="http://www.w3.org/2000/svg" width="440.549" height="429.625" viewBox="0 0 440.549 429.625">
+            <svg class="animate animate--slow bounce animate--infinite" id="diamond_image" xmlns="http://www.w3.org/2000/svg" width="440.549" height="429.625" viewBox="0 0 440.549 429.625">
                 <path id="Path_273" data-name="Path 273" d="M721.527,644.155h0M936.176,853.482H937.9c25.566-96.038,113.063-181.347,213.469-208.1v-1.533c-100.406-26.755-187.9-112.059-213.469-208.107h-1.722C910.6,531.784,823.1,617.093,722.706,643.848v1.533c100.406,26.755,187.9,112.058,213.469,208.1m2.932,5.941h-4.152a4.355,4.355,0,0,1-4.224-3.265c-24.74-94.91-111.387-179.348-210.706-205.339a4.37,4.37,0,0,1-3.265-4.224v-3.963a4.376,4.376,0,0,1,3.265-4.229c99.319-25.991,185.966-110.428,210.706-205.339a4.361,4.361,0,0,1,4.224-3.266h4.152a4.377,4.377,0,0,1,4.229,3.255c24.745,94.921,111.392,179.363,210.706,205.349a4.371,4.371,0,0,1,3.266,4.229V646.6a4.365,4.365,0,0,1-3.266,4.224C1054.73,676.81,968.082,761.248,943.337,856.163a4.376,4.376,0,0,1-4.229,3.26" transform="translate(-716.76 -429.799)" fill="#6b4dd6"/>
             </svg>
             <svg id="circle_image" xmlns="http://www.w3.org/2000/svg" width="430.579" height="430.579" viewBox="0 0 430.579 430.579">
@@ -21,24 +21,24 @@
               
             <!-- <img id="circle_image" src="images/Orange Circle.svg" alt=""> -->
             <!-- <img id="diamond_image" src="images/Purple Diamond.svg" alt=""> -->
-            <h3>Hi,<br><span id="h3_span">Welcome To My Trivia Survey Questions</span></h3>
-            <select id="trivia-questions"></select>
+            <h3 class="animate animate--slow bounce animate--infinite">Hi,<br><span id="h3_span">Welcome To My Trivia Survey Questions</span></h3>
+            <select id="trivia-questions" class="animate heading-2 animate--slow animate--delay-1s"></select>
             <i>
-                <p id="category_notice">Choose the Category you would like your questions to be based on.</p>
+                <p id="category_notice" class="animate heading-1 animate--slow animate--delay-1s">Choose the Category you would like your questions to be based on.</p>
             </i><br>
-            <button id="next">Start Trivia Game</button>
+            <button id="next" class="animate rotate animate--slower">Start Trivia Game</button>
 
         </div>
 
         <div id="second-form"><br>
-            <button id="next-button" class="butt">Next Question</button>
-            <button id="answer-button" class="butt">Show Answer</button>
-            <button class="restart-game" id="butt"><a href="./index.html"><span id="rest">Restart Trivia Game</span></a>
+            <button id="next-button" class="butt animate animate--slower bounced animate--infinite">Next Question</button>
+            <button id="answer-button" class="butt animate animate--slower bounced animate--infinite">Show Answer</button>
+            <button class="restart-game animate animate--slower bounced animate--infinite" id="butt"><a href="./index.html"><span id="rest">Restart Trivia Game</span></a>
             </button>
             <!-- <p id="question"></p> -->
 
 
-            <div id="notic">
+            <div id="notic" class="animate animate--slower rotated bounced">
                 <div id="info_div">
                     <h5 class="not">Notice!!!!</h5>
                     <p id="user">Dear User, in this Page you are to Answer 5 Questions <br> And Words Starting with an
@@ -52,15 +52,15 @@
             <div class="triviaQuestions">
 
 
-                <h4 id="question">Question</h4>
+                <h4 id="question" class="animate animate--slow bounced animate--infinite">Question</h4>
 
                 <ul>
                     <li>
                         <input type="radio" name="answer" id="a" class="answer"></input>
-                        <label for="a" id="a_text">Trivia Questions</label>
+                        <label for="a" id="a_text">Questions</label>
                     </li>
                     <li>
-                        <input type="radio" name="answer" id="b" class="answer"></input>
+                        <input type="radio" name="answer" id="b" class="answer "></input>
                         <label for="b" id="b_text">Questions</label>
                     </li>
                     <li>
@@ -72,13 +72,12 @@
                         <label for="d" id="d_text">Questions</label>
                     </li>
                 </ul>
-                <button id="submit">Submit</button>
+                <button id="submit" class="animate animate--slow bounce animate--infinite animate--delay-1s">Submit</button>
             </div>
 
             <div id="board">
 
-            </div>
-
+            </div><br><br><br>
         </div>
 
 
